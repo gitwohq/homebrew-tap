@@ -5,13 +5,13 @@
 class Gitwo < Formula
   desc "Git Workspace companion CLI"
   homepage "https://gitwo.dev"
-  version "0.1.5"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gitwohq/gitwo/releases/download/v0.1.5/gitwo_0.1.5_darwin_amd64.tar.gz"
-      sha256 "e4ecda0205cf57bf28352ff7e65c8cfd1b150c8e8106c2e48203335d6f942908"
+      url "https://github.com/gitwohq/gitwo/releases/download/v0.2.0/gitwo_0.2.0_darwin_amd64.tar.gz"
+      sha256 "8093b790ede8106b83545ade09f3114f40724537d870f911f5f64d1d8c4f3415"
 
       def install
         bin.install "gitwo"
@@ -22,8 +22,8 @@ class Gitwo < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gitwohq/gitwo/releases/download/v0.1.5/gitwo_0.1.5_darwin_arm64.tar.gz"
-      sha256 "b0eddae2c91f0fa2392d590ac2dd25833d106087bf2c1f9f0b290ea1786fe32b"
+      url "https://github.com/gitwohq/gitwo/releases/download/v0.2.0/gitwo_0.2.0_darwin_arm64.tar.gz"
+      sha256 "d1552c2d0fcc4716e780ec12199f43cefbd6b97b174351964ad6cff8ab31eac9"
 
       def install
         bin.install "gitwo"
@@ -37,8 +37,8 @@ class Gitwo < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/gitwohq/gitwo/releases/download/v0.1.5/gitwo_0.1.5_linux_amd64.tar.gz"
-      sha256 "ca236eeb2c519db703839fa9688489c26f3c9a69eeb5f5f35c63f180a99aa027"
+      url "https://github.com/gitwohq/gitwo/releases/download/v0.2.0/gitwo_0.2.0_linux_amd64.tar.gz"
+      sha256 "481ece76a232644c08f69b3bd56ed8fc89d17129ce830905cb3e9c049bd7431d"
       def install
         bin.install "gitwo"
         # Ship pre-generated shell completions from the archive:
@@ -48,8 +48,8 @@ class Gitwo < Formula
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/gitwohq/gitwo/releases/download/v0.1.5/gitwo_0.1.5_linux_arm64.tar.gz"
-      sha256 "2d549eed2e8a9a0e7e78b424ea75162a6ce767f795d4ddfcfa0d75725548c04e"
+      url "https://github.com/gitwohq/gitwo/releases/download/v0.2.0/gitwo_0.2.0_linux_arm64.tar.gz"
+      sha256 "87a018be44d3f288a690e6800b4ad7aa0c81606ea709dd97851a2cdd8d185efc"
       def install
         bin.install "gitwo"
         # Ship pre-generated shell completions from the archive:
